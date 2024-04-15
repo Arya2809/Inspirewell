@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+    <style>
+        body {
+          font-family: 'Times New Roman', Times, serif;          
+          height: 500vh;
+          background-image: url('https://www.fortech.ro/wp-content/uploads/2020/06/Hospital-Management-System_Fortech.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover;
+        }
+        
+        </style>
+</head>
+<body>
+
+<h2>Register as Patient</h2>
+
+<form action="patientregister.php" method="post">
+    <label for="Pid">Patient ID:</label>
+    <input type="text" id="Pid" name="Pid" required><br><br>
+
+    <label for="Patient_name">Patient Name:</label>
+    <input type="text" id="Patient_name" name="Patient_name" required><br><br>
+
+    <label for="Patient_phno">Phone Number:</label>
+    <input type="text" id="Patient_phno" name="Patient_phno" required><br><br>
+
+    <label for="Patient_address">Patient Address:</label>
+    <textarea id="Patient_address" name="Patient_address" required></textarea><br><br>
+
+    <button type="submit">Register</button><br><br>
+</form>
+<p><a href="hospital.html">BACK TO HOME PAGE</a><br></p>
+</body>
+</html>
